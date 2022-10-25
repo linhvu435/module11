@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+
+    th{
+      text-align: center;
+    }
+    tr {
+      align: center;
+    }
+    td{
+      width: 500px;
+      height: 50px;
+      font-language-override: revert ;
+
+    }
+    .anh{
+      display: flex;
+    }
+
+  </style>
+
+</head>
+<body>
+<thead>
+<table style="background-color: saddlebrown"  width="1600px">
+  <tr>
+    <th colspan="4"><font face="Comic sans MS" size="10">Mua Bán Động Vật Thú Cưng</font></th>
+  </tr>
+  <tr>
+    <td><button onclick="back()">Trang Chủ</button>  </td>
+    <td><button onclick="thongTin()">Thông Tin Khách Hàng</button>  &emsp;  &emsp;</td>
+    <td><button onclick="hoaDon()">Đơn Hàng</button>  &emsp;  &emsp;</td>
+  </tr>
+  <tr>
+    <td><input id="search" type="text" placeholder="Tìm Kiếm Theo Tên" style="height: 50px;width: 300px"><button id="tim"onclick="search()">Tìm Kiếm</button></td>
+    <td><button onclick="hienThi1()">Cún Con</button></td>
+    <td><button onclick="hienThi2()">Mèo Con</button></td>
+</table>
+</thead>
+<tbody>
+<div class="anh" id="chocon">
+  <img  src="https://img.meta.com.vn/Data/image/2021/09/21/hinh-anh-cho-con-4.jpg" style="width: 800px;height: 800px" id="cuncon"  onclick="changeImg()">
+  <iframe width="800" height="800" src="https://www.youtube.com/embed/RmP_Z6ilveo"
+          title="Tổng hợp các Video Hài Hước Của Thú Cưng 17 | Thú Cưng Hài Hước" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+  <dialog id="timkiemDialog">
+    <p id="pTimKiem"></p>
+    <button id="closeDialgBtn" onclick="document.getElementById('timkiemDialog').close()">Close!</button>
+  </dialog>
+</tbody>
+</body>
+</html>
+<script src="changeImagemodule1.js"></script>
